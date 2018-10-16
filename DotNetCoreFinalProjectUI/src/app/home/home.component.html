@@ -1,0 +1,27 @@
+<h1>Welcome to this simple Angular app!</h1>
+<div class="row">
+  <div class="col-md-6">
+  <label for="username">Username</label>
+  </div>
+  <div class="col-md-6">
+  <input type="text" id="username" disabled value="{{user.userName}}" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+  <label for="firstname">First Name</label>
+  </div>
+  <div class="col-md-6">
+  <input type="text" id="firstname" disabled value="{{user.firstName}}" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+  <label for="lastname">Last Name</label>
+  </div>
+  <div class="col-md-6">
+  <input type="text" id="lastname" disabled value="{{user.lastName}}" />
+  </div>
+</div>
+<a [routerLink]="['/login']">Logout</a>
+
